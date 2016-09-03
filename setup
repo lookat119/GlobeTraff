@@ -1,0 +1,51 @@
+#!/bin/sh 
+
+if [ ! -d data ]; then 
+	mkdir data
+fi 
+
+if [ ! -d results ]; then 
+	mkdir results
+fi 
+
+echo Making executables in root directory
+echo
+make clean
+make 
+
+cd prowgen
+echo 
+echo Making ProWGen
+echo
+make clean
+make
+cp ProWGen .. 
+
+cd ../webproxysim 
+echo 
+echo Making CacheDriver
+echo 
+make clean
+make
+cp CacheDriver .. 
+
+cd ../pop
+echo
+echo Making popularity 
+echo 
+make clean
+make 
+cp popularity ..
+
+cd ../locality 
+echo 
+echo Making lrustack and freqsize
+echo
+make clean
+make clean
+make
+cp lrustack .. 
+cp freqsize .. 
+
+cd ..
+
