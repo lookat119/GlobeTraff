@@ -46,6 +46,7 @@ make clean
 make
 cp lrustack .. 
 cp freqsize .. 
+cp freqsize.py .. 
 
 cd ..
 

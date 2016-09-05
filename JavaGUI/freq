@@ -1,1 +1,2 @@
-../freqsize < data/workload.web > data/docs.web
+#../freqsize < data/workload.web > data/docs.web
+../freqsize.py  data/workload.web  data/docs.web

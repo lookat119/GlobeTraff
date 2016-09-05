@@ -1,1 +1,1 @@
-../lrustack /home/melonli/Downloads/GlobeTraff/JavaGUI/ 0.2 100 1235030 0 0 stack.dat > data/workload.tmp
+../lrustack /home/melonli/git/GlobeTraff/JavaGUI/ 0.2 100 1221024 372165 0 stack.dat > data/workload.tmp
